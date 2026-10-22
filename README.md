@@ -1,40 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Tuition Tracker — Tuition Session & Payment Tracker (Next.js + MongoDB)
+
+**My Tuition Tracker** is a personal tuition management web app for private tutors, built with **Next.js** and **MongoDB**. Keep track of your tuition sessions and student payments in one simple dashboard instead of scattered notebooks and spreadsheets — add sessions, record payments, and always know exactly where you stand.
+
+## Features
+
+- **Session tracking** — log and review your tuition sessions in one place
+- **Payment tracking** — record student payments and keep an eye on what's paid and what's due
+- **Persistent storage** — all data is stored in MongoDB through Mongoose, so nothing is lost between visits
+- **Full-stack Next.js app** — pages-router frontend with API routes in the same project
+- **Clean, responsive UI** — Tailwind CSS with daisyUI components and React Icons
+
+## Tech Stack
+
+- **Framework:** Next.js 14 + React 18
+- **Language:** JavaScript
+- **Database:** MongoDB with Mongoose ODM
+- **Styling:** Tailwind CSS + daisyUI
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+> Make sure MongoDB is running (locally or via MongoDB Atlas) and its connection URI is configured for the app before using the tracker.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Other scripts:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+npm run build   # production build
+npm run start   # serve the production build
+npm run lint    # run ESLint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+⭐ If this tracker makes your tutoring life easier, consider giving it a star — contributions and feedback are welcome!
